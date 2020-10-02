@@ -1,45 +1,34 @@
 import React from 'react';
-import logo from './logo.svg';
+import { 
+  BrowserRouter as Router, 
+  Switch,
+  Route,
+  Link
+} from 'react-router-dom'
 import './App.css';
+import Home from './components/home/Home';
+import TestPage from './components/test-page/TestPage';
 
 class App extends React.Component {
   render() {
     return (
-      <div>
-        <NameForm />
-      </div>);
+      <Router>
+        <div>
+          <div>
+            <Link to="/"><img src="logo.svg" alt="logo"/></Link>
+          </div>
+          <Switch>
+            <Route path="/test">
+              <TestPage />
+            </Route>
+            <Route path="/">
+              <Home />
+            </Route>
+          </Switch>
+        </div>
+      </Router>
+    );
   } 
 }
 
 export default App;
-
-class NameForm extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {value: ''};
-
-    this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
-  }
-
-  handleChange(event) {
-    this.setState({value: event.target.value});
-  }
-
-  handleSubmit(event) {
-    alert('A name was submitted: ' + this.state.value);
-    event.preventDefault();
-  }
-
-  render() {
-    return (
-      <form onSubmit={this.handleSubmit}>
-        <label>
-          Name:
-          <input type="text" value={this.state.value} onChange={this.handleChange} />
-        </label>
-        <input type="submit" value="Submit" />
-      </form>
-    );
-  }
-}
