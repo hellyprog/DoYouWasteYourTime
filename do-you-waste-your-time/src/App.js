@@ -2,21 +2,19 @@ import React from 'react';
 import { 
   BrowserRouter as Router, 
   Switch,
-  Route,
-  Link
+  Route
 } from 'react-router-dom'
 import './App.css';
 import Home from './components/home/Home';
 import TestPage from './components/test-page/TestPage';
+import Header from './components/header/Header';
 
 class App extends React.Component {
   render() {
     return (
       <Router>
-        <div>
-          <div>
-            <Link to="/"><img src="logo.svg" alt="logo"/></Link>
-          </div>
+        <div className="container">
+          <Header />
           <Switch>
             <Route path="/test">
               <TestPage />
