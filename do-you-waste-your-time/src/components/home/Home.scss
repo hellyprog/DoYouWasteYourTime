@@ -1,0 +1,50 @@
+.home-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 2.5em;
+  justify-content: center;
+  min-height: 50vh;
+  padding: 20px;
+
+  .title-container {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    //max-width: 100%;
+
+    .title {
+      font-size: 3em;
+      font-weight: bold;
+      flex-basis: 50%;
+      flex-grow: 1;
+    }
+  
+    .logo-container {
+      flex-basis: 50%;
+      flex-grow: 1;
+      
+      .time-wasting-logo {
+        height: auto;
+        width: 100%;
+      }
+    }
+  }
+
+  .home-content {
+    .link {
+      color: #0055AA;
+      text-decoration: none;
+      padding: 5px;
+  
+      &:hover {
+        background-color: #0055AA;
+        border-radius: 10px;
+        color: #FFFFFF;
+        font-weight: bold;
+        padding: 5px;
+      }
+    }
+  }
+}
