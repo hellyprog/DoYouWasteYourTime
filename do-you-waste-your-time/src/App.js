@@ -8,6 +8,7 @@ import './App.css';
 import Home from './components/home/Home';
 import TestPage from './components/test-page/TestPage';
 import Header from './components/header/Header';
+import FactsPage from './components/facts-page/FactsPage';
 import Analytics from 'react-router-ga';
 
 class App extends React.Component {
@@ -19,6 +20,9 @@ class App extends React.Component {
           <Switch>
             <Route path="/test">
               <TestPage />
+            </Route>
+            <Route path="/facts">
+              <FactsPage />
             </Route>
             <Route path="/">
               <Home />

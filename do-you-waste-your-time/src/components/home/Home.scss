@@ -2,29 +2,34 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-  font-size: 2.5em;
   justify-content: center;
   min-height: 50vh;
   padding: 20px;
 
-  .title-container {
+  .title-container,
+  .sub-title-container {
     align-items: center;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    //max-width: 100%;
 
     .title {
-      font-size: 3em;
+      font-size: 7.5em;
       font-weight: bold;
-      flex-basis: 50%;
-      flex-grow: 1;
+      min-width: 400px;
+      width: 50%;
+    }
+
+    .sub-title {
+      font-size: 3.4em;
+      font-weight: bold;
+      min-width: 400px;
+      width: 50%;
     }
   
     .logo-container {
-      flex-basis: 50%;
-      flex-grow: 1;
-      
+      min-width: 400px;
+      width: 50%;
+
       .time-wasting-logo {
         height: auto;
         width: 100%;
@@ -32,18 +37,66 @@
     }
   }
 
-  .home-content {
-    .link {
-      color: #0055AA;
-      text-decoration: none;
-      padding: 5px;
-  
-      &:hover {
-        background-color: #0055AA;
-        border-radius: 10px;
-        color: #FFFFFF;
-        font-weight: bold;
+  .title-container {
+    flex-wrap: wrap;
+  }
+
+  .sub-title-container {
+    flex-wrap: wrap-reverse;
+  }
+
+  .sub-title-container:nth-child(odd) {
+    flex-wrap: wrap;
+  }
+
+  .question-title {
+    font-size: 6.2em;
+    font-weight: bold;
+  }
+
+  .links-container {
+    display: flex;
+    flex-direction: column;
+    font-size: 2.5em;
+
+    .link-container {
+      border: 1px solid #b1b1b1;
+      margin-top: 5px;
+      padding: 15px;
+
+      .link {
+        color: #0055AA;
+        text-decoration: none;
         padding: 5px;
+    
+        &:hover {
+          background-color: #0055AA;
+          border-radius: 10px;
+          color: #FFFFFF;
+          font-weight: bold;
+          padding: 5px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .home-container {
+    .title-container,
+    .sub-title-container {
+      .title {
+        font-size: 6em;
+        width: 100%;
+      }
+
+      .sub-title {
+        font-size: 3em;
+        width: 100%;
+      }
+
+      .logo-container {
+        width: 100%;
       }
     }
   }
