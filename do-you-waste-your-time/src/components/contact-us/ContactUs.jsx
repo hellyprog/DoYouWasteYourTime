@@ -1,5 +1,6 @@
 import React from 'react';
 import './ContactUs.scss';
+import BackToHome from '../common/BackToHome/BackToHome';
 
 class ContactUs extends React.Component {
   constructor(props) {
@@ -14,6 +15,7 @@ class ContactUs extends React.Component {
     const { status } = this.state;
     
     return (
+      <>
       <div className="form-container">
         <div className="heading">Tell us how you're managing your time. Best advices will be published on our website.</div>
         <form
@@ -30,6 +32,8 @@ class ContactUs extends React.Component {
           {status === "ERROR" && <p>Ooops! There was an error.</p>}
         </form>
       </div>
+      <BackToHome/>
+      </>
     );
   }
 

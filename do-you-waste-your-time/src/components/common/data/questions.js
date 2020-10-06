@@ -1,5 +1,7 @@
-export const questions = [
-  {title: "Fact #1", content: "84% of us are affected to some degree by procrastination, "},
-  {title: "Fact #2", content: "1 in 5 of us procrastinates every single day"},
-  {title: "Fact #3", content: "Very interesting fact #3"}
+export const fileQuestions = [
+  { id: "1", text: "How many social media account do you have?", answers: [] },
+  { id: "2", text: "Do you have a regular job?", answers: ["Yes", "No"] },
+  { id: "3", text: "How much do you earn monthly?", answers: [] },
+  { id: "4", text: "How much money do you spend on video games?", answers: [] },
+  { id: "5", text: "How many hours of Youtube do you watch per week?", answers: [] }
 ]

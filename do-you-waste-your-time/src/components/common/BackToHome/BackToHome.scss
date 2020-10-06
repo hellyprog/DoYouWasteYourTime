@@ -1,0 +1,18 @@
+.back-to-home-link-container {
+  display: flex;
+  justify-content: flex-end;
+  padding: 35px;
+
+  .back-to-home-link {
+    color: #0055AA;
+    font-size: 2em;
+    padding: 10px;
+    text-decoration: none;
+    transition: 0.2s;
+  
+    &:hover {
+      background: #0055AA;
+      color: #FFFFFF;
+    }
+  }
+}

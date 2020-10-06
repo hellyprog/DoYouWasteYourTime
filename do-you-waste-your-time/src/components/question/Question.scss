@@ -1,0 +1,21 @@
+.question-container {
+  font-size: 2em;
+
+  .question-text {
+    padding: 10px;
+  }
+
+  .radio-container {
+    display: flex;
+    
+    .radio {
+      margin-right: 25px;
+    }
+  }
+
+  input {
+    font-size: 1em;
+    font-family: 'Kodchasan', sans-serif;
+    margin-left: 10px;
+  }
+}
