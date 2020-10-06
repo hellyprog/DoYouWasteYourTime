@@ -1,0 +1,50 @@
+.form-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
+  .heading {
+    font-size: 2em;
+    font-weight: bold;
+    padding: 15px;
+  }
+
+  .contact-us-form {
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    padding-top: 15px;
+    width: 40%;
+
+    label {
+      font-size: 1.5em;
+      font-weight: bold;
+      padding-top: 10px;
+    }
+
+    input {
+      font-size: 1.5em;
+    }
+
+    button {
+      background: none;
+      border: 2px solid #0055AA;
+      font-size: 1.5em;
+      margin-top: 15px;
+      padding: 5px;
+      transition: 0.3s;
+
+      &:hover {
+        background: #0055AA;
+        color: #FFFFFF;
+        cursor: pointer;
+      }
+    }
+
+    textarea {
+      font-size: 1.5em;
+      height: 200px;
+      resize: none;
+    }
+  }
+}

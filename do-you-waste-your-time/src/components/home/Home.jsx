@@ -25,8 +25,9 @@ class Home extends React.Component {
           </div>
         </div>
         <div className="question-title">So... what?</div>
+        <div className="question-title">Life's too short to waste time!</div>
         <div className="links-container">
-          <div className="link-container">You can check <Link to="/facts" className="link">here</Link> facts about time wasting.</div>
+          <div className="link-container">You can tell us <Link to="/contact-us" className="link">here</Link> how you manage your time.</div>
           <div className="link-container">You can check <Link to="/test" className="link">here</Link> if you are wasting time.</div>
         </div>
       </div>

@@ -6,9 +6,9 @@ import {
 } from 'react-router-dom'
 import './App.css';
 import Home from './components/home/Home';
-import TestPage from './components/test-page/TestPage';
+import Test from './components/test/Test';
+import ContactUs from './components/contact-us/ContactUs';
 import Header from './components/header/Header';
-import FactsPage from './components/facts-page/FactsPage';
 import Analytics from 'react-router-ga';
 
 class App extends React.Component {
@@ -19,10 +19,10 @@ class App extends React.Component {
           <Header />
           <Switch>
             <Route path="/test">
-              <TestPage />
+              <Test />
             </Route>
-            <Route path="/facts">
-              <FactsPage />
+            <Route path="/contact-us">
+              <ContactUs />
             </Route>
             <Route path="/">
               <Home />

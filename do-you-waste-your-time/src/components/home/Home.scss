@@ -43,14 +43,14 @@
 
   .sub-title-container {
     flex-wrap: wrap-reverse;
-  }
 
-  .sub-title-container:nth-child(odd) {
-    flex-wrap: wrap;
+    &:nth-child(odd) {
+      flex-wrap: wrap;
+    }
   }
 
   .question-title {
-    font-size: 6.2em;
+    font-size: 6em;
     font-weight: bold;
   }
 
