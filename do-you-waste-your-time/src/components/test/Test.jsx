@@ -6,12 +6,12 @@ import BackToHome from '../common/BackToHome/BackToHome';
 import { useHistory } from 'react-router-dom';
 
 function Test () {
-  const [questions] = useState(fileQuestions)
+  const [questions] = useState(fileQuestions);
   const history = useHistory();
 
   const submitForm = (ev) => {
     ev.preventDefault();  
-    history.push('/');
+    history.push('/test-result');
   }
 
   const mappedQuestions = (questions.map((question, index) => 

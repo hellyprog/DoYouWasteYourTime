@@ -1,0 +1,20 @@
+.test-result-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .result-text {
+    font-size: 2.5em;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+    width: 70%;
+  }
+
+  .result-logo {
+    height: auto;
+    min-width: 400px;
+    width: 50%;
+  }
+}
