@@ -1,5 +1,7 @@
 .header{
   background: #0055AA;
+  display: flex;
+  justify-content: space-between;
   padding: 15px;
   width: 100%;
   
@@ -9,12 +11,27 @@
     font-weight: bold;
     text-decoration: none;
   }
+
+  .menu-button {
+    background: none;
+    border: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 2em;
+    font-weight: bold;
+    font-family: 'Kodchasan', sans-serif;
+    outline: none;
+  }
 }
 
 @media screen and (max-width: 800px) {
   .header {
     .home-link {
-      font-size: 2.5em;
+      font-size: 2.0em;
+    }
+
+    .menu-button {
+      font-size: 1.5em;
     }
   }
 }
