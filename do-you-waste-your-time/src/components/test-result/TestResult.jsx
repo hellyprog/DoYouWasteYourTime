@@ -1,6 +1,6 @@
 import React from 'react';
 import './TestResult.scss';
-import BackToHome from '../common/BackToHome/BackToHome';
+import BackToHome from '../common/back-to-home/BackToHome';
 
 class TestResult extends React.Component {
   render() {

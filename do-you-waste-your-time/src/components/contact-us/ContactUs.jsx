@@ -1,6 +1,6 @@
 import React from 'react';
 import './ContactUs.scss';
-import BackToHome from '../common/BackToHome/BackToHome';
+import BackToHome from '../common/back-to-home/BackToHome';
 
 class ContactUs extends React.Component {
   constructor(props) {

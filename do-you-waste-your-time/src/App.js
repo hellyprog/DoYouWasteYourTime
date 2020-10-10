@@ -8,9 +8,9 @@ import './App.css';
 import Home from './components/home/Home';
 import Test from './components/test/Test';
 import ContactUs from './components/contact-us/ContactUs';
-import Header from './components/header/Header';
+import Header from './components/common/header/Header';
 import TestResult from './components/test-result/TestResult';
-import Menu from './components/menu/Menu';
+import Menu from './components/common/menu/Menu';
 import Analytics from 'react-router-ga';
 
 class App extends React.Component {

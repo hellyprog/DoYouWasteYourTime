@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import {fileQuestions} from '../common/data/questions';
 import Question from '../question/Question';
 import './Test.scss';
-import BackToHome from '../common/BackToHome/BackToHome';
+import BackToHome from '../common/back-to-home/BackToHome';
 import { useHistory } from 'react-router-dom';
 
 function Test () {
