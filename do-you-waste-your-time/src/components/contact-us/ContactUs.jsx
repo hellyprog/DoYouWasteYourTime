@@ -18,19 +18,23 @@ class ContactUs extends React.Component {
       <>
       <div className="form-container">
         <div className="heading">Tell us how you're managing your time. Best advices will be published on our website.</div>
-        <form
-          onSubmit={this.submitForm}
-          action="https://formspree.io/f/xzbkdekw"
-          method="POST"
-          className="contact-us-form"
-        >
-          <label>Email:</label>
-          <input type="email" name="email" />
-          <label>Message:</label>
-          <textarea name="message"></textarea>
-          {status === "SUCCESS" ? <p>Thanks!</p> : <button>Submit</button>}
-          {status === "ERROR" && <p>Ooops! There was an error.</p>}
-        </form>
+        <div className="form-logo-container">
+          <img src="/undraw_Letter_re_8m03.png" alt="mail-logo" className="mail-logo"/>
+          
+          <form
+            onSubmit={this.submitForm}
+            action="https://formspree.io/f/xzbkdekw"
+            method="POST"
+            className="contact-us-form"
+          >
+            <label>Email:</label>
+            <input type="email" name="email" />
+            <label>Message:</label>
+            <textarea name="message"></textarea>
+            {status === "SUCCESS" ? <p>Thanks!</p> : <button>Submit</button>}
+            {status === "ERROR" && <p>Ooops! There was an error.</p>}
+          </form>
+        </div>
       </div>
       <BackToHome/>
       </>

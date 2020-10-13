@@ -10,46 +10,61 @@
     text-align: center;
   }
 
-  .contact-us-form {
+  .form-logo-container {
+    align-items: center;
     display: flex;
-    flex-direction: column;
-    min-width: 300px;
-    padding-top: 15px;
-    width: 40%;
+    flex-wrap: wrap;
+    justify-content: center;
 
-    label {
-      font-size: 2em;
-      font-weight: bold;
-      padding-top: 10px;
+    .mail-logo {
+      height: auto;
+      min-width: 400px;
+      width: 30%;
     }
 
-    input {
-      font-size: 2em;
-      font-family: 'Kodchasan', sans-serif;
-    }
-
-    button {
-      background: none;
-      border: 2px solid #0055AA;
-      font-size: 2em;
-      font-weight: bold;
-      font-family: 'Kodchasan', sans-serif;
-      margin-top: 15px;
-      padding: 5px;
-      transition: 0.3s;
-
-      &:hover {
-        background: #0055AA;
-        color: #FFFFFF;
-        cursor: pointer;
+    .contact-us-form {
+      display: flex;
+      flex-direction: column;
+      min-width: 300px;
+      padding-top: 15px;
+      width: 40%;
+  
+      label {
+        font-size: 2em;
+        font-weight: bold;
+        padding-top: 10px;
+      }
+  
+      input {
+        font-size: 2em;
+        font-family: 'Kodchasan', sans-serif;
+      }
+  
+      button {
+        background: none;
+        border: 2px solid #0055AA;
+        font-size: 2em;
+        font-weight: bold;
+        font-family: 'Kodchasan', sans-serif;
+        margin-top: 15px;
+        padding: 5px;
+        transition: 0.3s;
+  
+        &:hover {
+          background: #0055AA;
+          color: #FFFFFF;
+          cursor: pointer;
+        }
+      }
+  
+      textarea {
+        font-size: 2em;
+        font-family: 'Kodchasan', sans-serif;
+        height: 200px;
+        resize: none;
       }
     }
-
-    textarea {
-      font-size: 2em;
-      font-family: 'Kodchasan', sans-serif;
-      height: 200px;
-      resize: none;
-    }
   }
+
+  
 }
