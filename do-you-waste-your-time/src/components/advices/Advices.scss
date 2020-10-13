@@ -4,4 +4,22 @@
   flex-direction: column;
   justify-content: center;
   padding: 15px;
+
+  .heading {
+    font-size: 2.2em;
+    
+    .link {
+      color: #0055AA;
+      text-decoration: none;
+      padding: 5px;
+  
+      &:hover {
+        background-color: #0055AA;
+        border-radius: 10px;
+        color: #FFFFFF;
+        font-weight: bold;
+        padding: 5px;
+      }
+    }
+  }
 }
