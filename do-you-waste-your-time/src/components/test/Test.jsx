@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {fileQuestions} from '../common/data/questions';
+import {fileQuestions} from '../../data/questions';
 import Question from '../question/Question';
 import './Test.scss';
 import BackToHome from '../common/back-to-home/BackToHome';
@@ -14,8 +14,8 @@ function Test () {
     history.push('/test-result');
   }
 
-  const mappedQuestions = (questions.map((question, index) => 
-    <Question text={question.text} answers={question.answers} id={question.id} key={index}/>));
+  const mappedQuestions = (questions.map((question) => 
+    <Question text={question.text} answers={question.answers} id={question.id} key={question.id}/>));
 
   return (
     <>

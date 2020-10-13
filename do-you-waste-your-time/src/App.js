@@ -11,6 +11,7 @@ import ContactUs from './components/contact-us/ContactUs';
 import Header from './components/common/header/Header';
 import TestResult from './components/test-result/TestResult';
 import Menu from './components/common/menu/Menu';
+import Advices from './components/advices/Advices';
 import Analytics from 'react-router-ga';
 
 class App extends React.Component {
@@ -21,6 +22,9 @@ class App extends React.Component {
           <Header />
           <Menu />
           <Switch>
+            <Route path="/advices">
+              <Advices />
+            </Route>
             <Route path="/test-result">
               <TestResult />
             </Route>

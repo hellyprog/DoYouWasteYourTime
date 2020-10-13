@@ -13,6 +13,7 @@ function Menu() {
       <button className="closebtn" onClick={closeMenu}>&times;</button>
       <div className="overlay-content">
         <Link to="/" onClick={closeMenu}>Home</Link>
+        <Link to="/advices" onClick={closeMenu}>Time management advices</Link>
         <Link to="/test" onClick={closeMenu}>Take a test</Link>
         <Link to="/contact-us" onClick={closeMenu}>Contact Us</Link>
       </div>
