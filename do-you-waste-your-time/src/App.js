@@ -12,6 +12,7 @@ import Header from './components/common/header/Header';
 import TestResult from './components/test-result/TestResult';
 import Menu from './components/common/menu/Menu';
 import Advices from './components/advices/Advices';
+import DayTimer from './components/day-timer/DayTimer';
 import Analytics from 'react-router-ga';
 
 class App extends React.Component {
@@ -24,6 +25,9 @@ class App extends React.Component {
           <Switch>
             <Route path="/advices">
               <Advices />
+            </Route>
+            <Route path="/day-timer">
+              <DayTimer />
             </Route>
             <Route path="/test-result">
               <TestResult />

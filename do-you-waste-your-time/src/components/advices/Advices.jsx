@@ -21,7 +21,7 @@ function Advices () {
     <>
       <div className="advices-container">
       <div className="heading">Check our list of time management advices.</div>
-      <div className="heading">You can send us your advices via <Link to="/contact-us" className="link">contact-us</Link> page.</div>
+      <div className="heading">You can send us your advices via <Link to="/contact-us" className="link">contact-us</Link> page. The best ones will be published in this section.</div>
         {mappedAdvices}
       </div>
       <BackToHome/>
