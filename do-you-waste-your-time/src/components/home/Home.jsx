@@ -1,8 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { HOME_TITLE } from '../../data';
 import './Home.scss';
 
 class Home extends React.Component {
+  componentWillMount () {
+    document.title = HOME_TITLE;
+  }
+
   render() {
     return (
       <div className="home-container">
@@ -28,7 +33,7 @@ class Home extends React.Component {
         <div className="question-title">Life's too short to waste time!</div>
         <div className="links-container">
           <div className="link-container">You can tell us in <Link to="/contact-us" className="link">contact-us</Link> section how you manage your time.</div>
-          <div className="link-container">You can check int our <Link to="/test" className="link">test</Link> if you are wasting time.</div>
+          <div className="link-container">You can check in our <Link to="/test" className="link">test</Link> if you are wasting time.</div>
         </div>
       </div>
     );

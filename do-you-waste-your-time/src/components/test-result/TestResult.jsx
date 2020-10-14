@@ -1,8 +1,13 @@
 import React from 'react';
 import './TestResult.scss';
 import BackToHome from '../common/back-to-home/BackToHome';
+import { TEST_RESULT_TITLE } from '../../data';
 
 class TestResult extends React.Component {
+  componentWillMount() {
+    document.title = TEST_RESULT_TITLE;
+  }
+
   render() {
     return (
       <>

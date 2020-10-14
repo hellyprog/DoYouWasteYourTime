@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {fileQuestions} from '../../data/questions';
 import Question from '../question/Question';
 import './Test.scss';
 import BackToHome from '../common/back-to-home/BackToHome';
 import { useHistory } from 'react-router-dom';
+import { TEST_TITLE } from '../../data';
 
 function Test () {
   const [questions] = useState(fileQuestions);
@@ -16,6 +17,10 @@ function Test () {
 
   const mappedQuestions = (questions.map((question) => 
     <Question text={question.text} answers={question.answers} id={question.id} key={question.id}/>));
+
+    useEffect(() => {
+      document.title = TEST_TITLE;
+    }, []);
 
   return (
     <>

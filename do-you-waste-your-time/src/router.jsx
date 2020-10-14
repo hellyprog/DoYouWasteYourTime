@@ -4,6 +4,7 @@ import { Route } from 'react-router';
 export default (
     <Route>
         <Route path='/' />
+        <Route path="/advices" />
         <Route path='/contact-us' />
         <Route path='/test-result' />
         <Route path='/test' />

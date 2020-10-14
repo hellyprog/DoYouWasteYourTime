@@ -1,14 +1,20 @@
 import React from 'react';
 import './ContactUs.scss';
+import {CONTACT_US_TITLE} from '../../data';
 import BackToHome from '../common/back-to-home/BackToHome';
 
 class ContactUs extends React.Component {
   constructor(props) {
     super(props);
+
     this.submitForm = this.submitForm.bind(this);
     this.state = {
       status: ""
     };
+  }
+
+  componentWillMount () {
+    document.title = CONTACT_US_TITLE;
   }
 
   render() {

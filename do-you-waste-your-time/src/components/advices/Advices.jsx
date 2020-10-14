@@ -1,8 +1,9 @@
-import React, {useState} from 'react';
-import {fileAdvices} from '../../data/advices';
+import React, {useState, useEffect} from 'react';
+import {fileAdvices} from '../../data';
 import Advice from '../advice/Advice';
 import BackToHome from '../common/back-to-home/BackToHome';
 import {Link} from 'react-router-dom';
+import { ADVICE_TITLE } from '../../data';
 import './Advices.scss';
 
 function Advices () {
@@ -11,6 +12,10 @@ function Advices () {
   const mappedAdvices = (advices.map((advice) =>
     <Advice id={advice.id} text={advice.text} title={advice.title} key={advice.id}/>
   ));
+
+  useEffect(() => {
+    document.title = ADVICE_TITLE;
+  }, []);
 
   return (
     <>
