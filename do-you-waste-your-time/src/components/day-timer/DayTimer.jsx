@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import './DayTimer.scss';
 import BackToHome from '../common/back-to-home/BackToHome';
+import { DAY_TIMER_TITLE } from '../../data';
 
 function DayTimer() {
   const [timeTillEndOfDay, setTimeLeft] = useState(calculateTimeTillEndOfToday());
@@ -18,6 +19,8 @@ function DayTimer() {
   }
 
   useEffect(() => {
+    document.title = DAY_TIMER_TITLE;
+    
     const timer = setTimeout(() => {
       setTimeLeft(calculateTimeTillEndOfToday());
     }, 1000);
